@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BroDev</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/home.css">	
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+		<link rel="stylesheet" href="css/plugins.css">
+	</head>
+	<body>
+
+		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>		
+
+		<div class="layout">
+			<header>
+				<div class="container">
+
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+						<a href="index.html">
+							<img src="images/BroDev.png" alt="Logo Topo Tag">
+						</a>
+					</div>
+
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Início</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+
+						<ul class="social">
+							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+								<a href="https://web.facebook.com/lorenzo.librelon/"><i class="fa fa-facebook" target="_blank"></i></a>
+							</li>
+
+							<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+								<a href="https://github.com/lorenzolibrelon" target="_blank"><i class="fa fa-github-alt"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="intro">
+						<h1><strong>Bro</strong>.<strong>Dev</strong></h1>
+
+						<p>- Fazemos a sua vitrine virtual -</p>	
+					</div>
+				</div>
+				
+			</header>
+			
+			<main>
+				<section class="sobre">
+					<div class="container">
+						<div class="itens">	
+							<div class="im1" data-wow-duration="1s" data-wow-delay="1s">
+								<img src="images/htm.png" alt="HTML TAG" width="190px">
+							</div>
+
+							<div class="im1" data-wow-duration="1s" data-wow-delay="2s">
+								<img src="images/css.png" alt="CSS TAG" width="190px">
+							</div>
+
+							<div class="imeio" data-wow-duration="1s" data-wow-delay="5s">
+								<img src="images/foto-tag-miolo.png" alt="Foto TAG">
+							</div>
+
+							<div class="im2" data-wow-duration="1s" data-wow-delay="3s">
+								<img src="images/js.png" alt="JS TAG" width="190px">
+							</div>
+
+							<div class="im2" data-wow-duration="1s" data-wow-delay="4s">
+								<img src="images/git.png" alt="GIT TAG" width="200px">
+							</div>
+						</div>
+
+						<div class="textos">
+							<p>Nós da <strong>BroDev</strong> possuímos amplo conhecimento das mais comuns linguagens de programação usadas na atualidade. Tendo construído diversos sites e landing pages, faremos a vitrine perfeita pro seu negócio!</p>
+
+							<a href="contato.html" class="botao medio"><i class="fa fa-eye"></i> Contratar</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<div class="logobot"><img src="images/BroDev Name.png" alt="Logo TAG Rodapé"></div>
+					</a>
+					<p>2022 Todos os Direitos Reservados</p>
+					<p>Lorenzo Librelon</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){				
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+
+			var host = "#"
+			if (window.location.host == host && window.location.protocol != "https:") {
+			  window.location.protocol = "https:"
+			}
+		</script>
+	</body>
+</html>
