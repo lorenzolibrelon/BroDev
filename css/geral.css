@@ -26,9 +26,3 @@ body{font-family:'Open Sans', sans-serif !important;font-weight:400;line-height:
 .imeio img{
     border-radius: 50%;
 }
-
-.intro{
-    background-color: #000;
-    opacity: 50%;
-    padding-bottom: -20vh;
-}
